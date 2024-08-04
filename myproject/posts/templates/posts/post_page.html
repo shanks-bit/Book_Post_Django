@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.created_at }}</p>
+        <p>{{ post.description }}</p>
+        <p>{{ post.author }}</p>
+        <p>{{ post.genre }}</p>
+        <p>{{ post.rating }}</p>
+        <p>{{ post.user }}</p>
+    </section>
+{% endblock %}
